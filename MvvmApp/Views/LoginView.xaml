@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Views.LoginView">
+	<ContentPage.Content>
+		<StackLayout Padding="20">
+			<Entry Text="{Binding Email}" Keyboard="Email" Placeholder="email@server.com"></Entry>
+			<Entry IsPassword="true" Text="{Binding Password}" Placeholder="password"></Entry>
+			<Button Text="Login" Command="{Binding LoginCommand}"></Button>
+			<Button Text="Register" Command="{Binding RegisterCommand}"></Button>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>
